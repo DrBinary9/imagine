@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	color:#ffffff;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	margin:0;
+	padding:0; /*remove default margin and padding*/
+	
+}
+
+.app{
+	color: rgba(248, 248, 242, 1);
+	background-color: rgba(40, 42, 54, 1);
+	display: flex; /* No scroll option */
+}
+
+.side-bar{
+	background-color: #44475a	;
+	height: 100vh;
+	width: 244px;
+	display: flex; /* text becomes a vertical section with this line alone*/
+	flex-direction: column;
+	justify-content: space-between; /*equispaced*/
+}
+
+.main{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+	text-align: center;	
+}
+
+button{
+	border: solid 0.5px rgba(255,255,255,0.5);
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;	
+}
+
+nav{
+	border-bottom: solid 0.5px rgba(255,255,255,0.5);
+	padding: 5px;
+	margin: 5px;
+}
+
+.history{
+	padding: 5px;
+	margin: 5px;
+	height: 100%;	
+}
+
+.history li{
+	list-style-type: none;
+	padding: 15px 0;
+	cursor: pointer;	
+}
+
+.bottom-section{
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-container{
+	position: relative;
+	width: 100%;
+	max-width: 50%;
+}
+input{
+	width: 100%;
+	border: none;
+	background-color: rgba(255,255,255,0.05);
+	padding: 12px 15px;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.05) 0 54px 55px,
+		rgba(0,0,0,0.05) 0 -12px 30px,
+		rgba(0,0,0,0.05) 0 4px 6px,
+		rgba(0,0,0,0.05) 0 12px 3px,
+		rgba(0,0,0,0.05) 0 -3px 5px;
+}
+
+input:focus{
+	outline:none;
+}
+
+#submit{
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+	cursor: pointer;
+}
+
+.feed{
+	width: 50%;
+	padding: 0;
+	
+}
+
+.feed li{
+	display: flex;
+	width: 100%;
+	padding: 20;
+	margin: 20px 0; /* top and bottom 20px, left and right 0px*/ 
+	
+}
+
+.feed p{
+	color: rgba(255,255,255,0.8);
+	font-size: 14px;
+	text-align: left;
+	margin: 20px 0; /* top and bottom 20px, left and right 0px*/ 
+	
+}
+
+.feed p.role{
+	min-width: 100px;
+}
+
+
